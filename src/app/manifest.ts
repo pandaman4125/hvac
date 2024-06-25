@@ -1,12 +1,12 @@
 import type { MetadataRoute } from 'next';
 
 const manifest = (): MetadataRoute.Manifest => ({
-  short_name: 'nextarter-chakra',
-  name: 'Next.js App Template',
+  short_name: 'Atencio Enterprises',
+  name: 'Atencio Enterprises',
   lang: 'en',
   start_url: '/',
-  background_color: '#FFFFFF',
-  theme_color: '#FFFFFF',
+  background_color: '#ffffff',
+  theme_color: '#ffffff',
   dir: 'ltr',
   display: 'standalone',
   prefer_related_applications: false,

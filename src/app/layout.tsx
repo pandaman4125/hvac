@@ -7,10 +7,10 @@ type RootLayoutProps = {
   children: React.ReactNode;
 };
 
-const APP_NAME = 'nextarter-chakra';
+const APP_NAME = 'Atencio Enterprises';
 
 export const metadata: Metadata = {
-  title: { default: APP_NAME, template: '%s | nextarter-chakra' },
+  title: { default: APP_NAME, template: '%s | Atencio Enterprises' },
   description: 'Next.js + chakra-ui + TypeScript template',
   applicationName: APP_NAME,
   appleWebApp: {
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#FFFFFF',
+  themeColor: '#ffffff',
 };
 
 const RootLayout = ({ children }: RootLayoutProps) => {

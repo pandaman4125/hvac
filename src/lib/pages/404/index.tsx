@@ -30,9 +30,7 @@ const Page404 = () => {
           href="https://stories.freepik.com/web"
           isExternal
           rel="noopener noreferrer"
-        >
-          Illustration by Freepik Stories
-        </ChakraLink>
+        />
       </Text>
 
       <Box marginY={4}>
