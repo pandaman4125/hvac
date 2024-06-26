@@ -6,10 +6,17 @@ const withPWA = require('next-pwa')({
 });
 
 /** @type {import('next').NextConfig} */
-module.exports = withPWA({
+const nextConfig = {
   swcMinify: true,
   reactStrictMode: true,
   eslint: {
     dirs: ['src'],
   },
-});
+  assetPrefix: process.env.GITHUB_ACTIONS ? `/${process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')}/` : '',
+  basePath: process.env.GITHUB_ACTIONS ? `/${process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')}` : '',
+  trailingSlash: true,
+  output: 'export',
+  distDir: 'docs', // Specify the output directory as 'docs'
+};
+
+module.exports = withPWA(nextConfig);
